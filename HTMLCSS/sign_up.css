@@ -1,0 +1,91 @@
+body{
+    font-family: serif !important;
+    background: radial-gradient(#5356FF,#378CE7,#67C6E3,#DFF5FF) !important;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    border: none;
+    width: 650px !important;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.container h2{
+    color: #3385ff;
+}
+
+label{
+    display: block;
+    padding: 10px 12px;
+}
+
+.container input{
+    display: block;
+    width: 250px;
+    border-radius: 9px;
+}
+
+select:hover, input:hover{
+    border: 2px solid #e0ae09;
+}
+
+div p{
+    color: #898787;
+}
+
+#gender, #terms-policy{
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+
+}
+
+.basic-info label select{
+    border-radius: 9px;
+}
+
+.button{
+    width: 250px;
+    height: 40px;
+    background-color: #3385ff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    margin: 30px 0;
+    margin-left: 69px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.button:hover{
+    background-color: #000;
+    color:#3385ff;
+}
+
+.log-in{
+    text-align: center;
+}
+ div form a{
+    text-decoration: none;
+ }

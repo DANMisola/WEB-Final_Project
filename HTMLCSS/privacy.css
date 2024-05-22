@@ -1,0 +1,216 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    background: url('subtle-noise.png'), linear-gradient(to bottom, #f0f0f0, #ffffff) !important;
+}
+
+/*navigation*/
+.logo{
+    
+    width: 100px;
+    height: 70px;
+    border-radius: 6px;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.logo:hover{
+    
+    opacity: 0.6;
+}
+
+.navbar{
+    background-color: #DFF5FF;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+nav .navbar-brand {
+    color: #3385ff;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.offcanvas-title{
+    color:#3385ff;
+    font-weight: 600;
+}
+
+.login-button{
+
+    background-color: #3385ff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-left: 10px;
+}
+
+.login-button:hover{
+    background-color: black;
+}
+/*Search bar*/
+.container .input-group input{
+    border-color: #3385ff;
+}
+
+.container .input-group .sbar{
+    border-color: #3385ff;
+}
+
+.container .input-group .sbar:hover{
+    background-color: #3385ff;
+}
+
+@media screen and (max-width: 600px) {
+    .container .input-group input{
+        display: none;
+    }
+}
+/*search bar end*/
+
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #5830e8;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+/*end navigation*/
+
+/*Hero section*/
+.hero-section{
+    background: url(auspic2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 40%;
+    left: 0;
+}
+
+.hero-section .container{
+    height: 60vh;
+    z-index: 1;
+    position: relative;
+
+}
+
+.hero-section h1{
+    font-size: 2.5em;
+    color:#3385ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.hero-section h2{
+    font-size: 1.2em;
+    margin-bottom: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-section p span{
+    font-style: italic;
+    font-size: small;
+}
+
+.hero-section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.3s; 
+}
+      
+.hero-section p:hover{
+    transform: scale(1.1); 
+    color: #3385ff;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.hero-section h1:hover{
+    animation: fade-in-out 2s;
+} 
+
+.hero-section h2:hover{
+    animation: fade-in-out 2s;
+}
+/*end hero sec*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

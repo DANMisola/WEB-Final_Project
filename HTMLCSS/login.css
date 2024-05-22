@@ -1,0 +1,118 @@
+body{
+    background: radial-gradient(#5356FF,#378CE7,#67C6E3,#DFF5FF) !important;
+    font-family: serif !important;
+    height: 70vh;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+    border: 1px solid;
+    width: 300px !important;
+    height: 320px;
+    border-radius: 14px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+}
+      
+.container:hover {
+    transform: scale(1.1); 
+}
+
+.container h2{
+    padding: 10px 12px;
+    color: #3385ff;
+}
+
+label{
+    padding: 10px 12px;
+}
+
+#email{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
+
+.container form #email:hover{
+    border: 1px solid #e0ae09;
+}
+
+#password{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
+
+.container form #password:hover{
+    border: 1px solid #3385ff;
+}
+
+.remember-me{
+    display: inline-block;
+}
+
+.forgot-pass{
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+.forgot-pass a{
+    text-decoration: none;
+}
+
+.button{
+    width: 195px;
+    height: 36px;
+    padding-top: 2px;
+    border-radius: 20px;
+    background-color: #3385ff;
+    color: #fff;
+    border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #404344;
+    color: #3385ff;
+}
+
+.sign-in{
+    margin-top: 9px;
+    text-decoration: none;
+}
+
+.sign-in a{
+    text-decoration: none;
+}
+
+.logo{
+    
+    width: 100px;
+    height: 70px;
+    border-radius: 6px;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.logo:hover{
+    
+    opacity: 0.3;
+}
+
+footer{
+    margin: 80px 0;
+    font-size: 13px;
+}
+
+footer .copyright{
+    text-align: center;
+}
+
