@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    background: url('subtle-noise.png'), linear-gradient(to bottom, #f0f0f0, #ffffff) !important;
+}
+
+/*navigation*/
+.logo{
+    
+    width: 100px;
+    height: 70px;
+    border-radius: 6px;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.logo:hover{
+    
+    opacity: 0.6;
+}
+
+.navbar{
+    background-color: #DFF5FF;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+nav .navbar-brand {
+    color: #3385ff;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.offcanvas-title{
+    color:#3385ff;
+    font-weight: 600;
+}
+
+.login-button{
+
+    background-color: #3385ff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-left: 10px;
+}
+
+.login-button:hover{
+    background-color: black;
+}
+/*Search bar*/
+.container .input-group input{
+    border-color: #3385ff;
+}
+
+.container .input-group .sbar{
+    border-color: #3385ff;
+}
+
+.container .input-group .sbar:hover{
+    background-color: #3385ff;
+}
+
+@media screen and (max-width: 600px) {
+    .container .input-group input{
+        display: none;
+    }
+}
+/*search bar end*/
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #5830e8;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+/*end navigation*/
+
+/*Hero section*/
+.hero-section{
+    background: url(shoe.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+
+}
+
+.hero-section h1{
+    font-size: 2.5em;
+    color:#3385ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.hero-section h2{
+    font-size: 1.2em;
+    margin-bottom: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-section p span{
+    font-style: italic;
+    font-size: small;
+}
+
+.hero-section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.3s; 
+}
+      
+.hero-section p:hover{
+    transform: scale(1.1); 
+    color: #3385ff;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.hero-section h1:hover{
+    animation: fade-in-out 2s;
+} 
+
+.hero-section h2:hover{
+    animation: fade-in-out 2s;
+}
+
+ .shop_now{
+    text-decoration: none;
+
+}
+/*end hero sec*/
+
+.pad{
+    padding: 40px 80px;
+
+}
+
+.marg{
+    margin: 40px 0;
+}
+
+/*card preview*/
+.card .card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.card .checked{
+    color: red;
+}
+
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.card {
+    transition: transform 0.3s; 
+}
+      
+.card:hover {
+    transform: scale(1.1); 
+}
+/*...*/      
+
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+
+}
+
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+
+.preview .btn-primary a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.preview .btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+
+.preview h3{
+    color: rgb(0,91,228);
+}
+
+.preview h5{
+    color: rgb(0,91,228);
+}
+/*end preview sec*/
+
+/*Courosel Section*/
+#shoes img{
+    height: 70vh;
+}
+
+#shoes{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 50px;
+}
+
+/*Banner Section*/
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.banner i{
+    color: rgba(255, 0, 0, 0.92);
+    font-weight: 700;
+}
+
+/*banner 2*/
+.banner2 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(banner.jpg);
+    width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.banner2 .box1{
+    background-image: url(banner2\ pic1.jpg);
+}
+
+.banner2 .box2{
+    background-image: url(banner2\ pic2.jpg);
+}
+
+.banner2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    margin-top: 20px;
+}
+
+.banner2 h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.banner2 h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.banner2 span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.banner2 a{
+    text-decoration: none;
+
+}
+
+/*banner 3*/
+.banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+.banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(banner.jpg);
+    width: 400px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.banner3 .banner-box h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.banner3 .box3{
+    background-image: url(banner3\ pic1.jpg);
+    
+}
+
+.banner3 .box4{
+    background-image: url(banner3\ pic2.jpg);
+    
+}
+
+.banner3 .box5{
+    background-image: url(banner3\ pic3.jpg);
+    
+}
+
+.banner3 .box6{
+    background-image: url(bb1.jpg);
+    
+}
+
+.banner3 .box7{
+    background-image: url(bb2.jpg);
+    
+}
+
+.banner3 .box8{
+    background-image: url(bb3.jpg);
+    
+}
+
+.banner3 .box9{
+    background-image: url(bb4.jpg);
+    
+}
+
+.banner3 .box10{
+    background-image: url(bb5.jpg);
+    
+}
+
+.banner3 .box11{
+    background-image: url(bb6.jpg);
+    
+}
+
+.banner3 h3{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #DFF5FF;
+    margin-top: 40px;
+}
+
+footer .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+div .google{
+    width: 150px;
+    height: 60px;
+}
+
+div .apple{
+    width: 150px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+div .payment{
+    margin-top: 10px;
+    height: 60px;
+    width: 250px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
